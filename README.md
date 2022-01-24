@@ -48,10 +48,10 @@ The best model is called VotingEnsemble. It is a superposition of 8 combinations
 SparseNormalzier+RandomForestRergessor; 2x StandardScalerWrapper+XGBoostRegressor; 2x SparseNormalizer+XGBoostRegressor; MaxAbsScaler+LightGBM;
 MaxAbsScaler+XGBoostRegressor; MaxAbsScaler+LightGBM. The two combinations above differ in the hyperparameters, e.g. for the tree booster. 
 In tern, another hyperparameter is the ensemble weights, with the largest (33%) being MaxAbsScaler+XGBoostRegressor.
-R2 is 0.43530 for this model.
+R2 is 0.44 for this model.
 ## Pipeline comparison
 **Compare the two models and their performance. What are the differences in accuracy? In architecture? If there was a difference, why do you think there was one?**
-As it was mentioned above, the best model is VotingEnsamble. With rmse of 0.2351 it performs substantially better than the logistic regression model with rmse of 0.297.
+As it was mentioned above, the best model is VotingEnsamble. With rmse of 0.235 it performs substantially better than the logistic regression model with rmse of 0.298.
 The reason from accuracy is stemming from multiple factors. Firstly, by construction logistic regression is a linear model which only accounts for linear effects.
 Secondly, ML is applying data transformations (scaling, normalization) before doing the fit, which adds to accuracy and efficiency.
 Thirdly, it might be that the best parameter is still not the optimim for the logistic regression model, and one might try different hyperparameter sampling in order to find a better performing model.
