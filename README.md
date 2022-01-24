@@ -65,4 +65,4 @@ Changing the termination policy might also have a positive effect. Once we chang
 As to the AutoML model, the two most obvious improvements are an increase of the experiment timeout and the number of cross-validations. The former will allow for experiment to last longer, hence to explore more hyperparameters and potential models, the latter will make sure that the results are more reliable. 
 ## Proof of cluster clean up
 The cluster is removed in the code (see jupyter notebook). However, to make sure that this item is addressed, here is also the snapshot of the cluster to be removed:
-![alt text](http://url/to/img.png)
+![alt text](https://github.com/vcherny/udacity_pofject_1_final/blob/main/project_1_delete_cluster.PNG)
